@@ -179,16 +179,194 @@
                 <p style="font-family: 'GellixSemiBold';">Parabéns!</p>
             </div>
 
-            <img src="images/quiz6.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <img src="images/quiz7.png" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
 
 
-            <p style="padding: 25px;">
-                Parabéns!! você ganhou <strong>acesso há primeira roleta premiada WePink, você terá a oportunidade de
-                    rodar a Roleta Premiada 1 vez, podendo ganhar até 95% de desconto e frete grátis!</strong>
+            <!-- ===== BLOCO PREMIUM: Mensagem de prêmio ===== -->
+<div class="wp-win-card">
+  <div class="wp-win-badge">🎁 PARABÉNS!</div>
 
-                <br><br>
-                Esperamos que você aproveite ao máximo cada produto, Boa Sorte!
-                <br><br>
+  <h2 class="wp-win-title">
+    Você ganhou acesso à <span>Primeira Roleta Premiada WePink</span>
+  </h2>
+
+  <p class="wp-win-text">
+    Você terá a oportunidade de <strong>rodar a Roleta Premiada 1 vez</strong>,
+    podendo ganhar <strong>até 95% de desconto</strong> e <strong>frete grátis</strong>.
+  </p>
+
+  <div class="wp-win-perks">
+    <div class="wp-win-perk">
+      <span class="wp-win-icon">✅</span>
+      <span><strong>1 giro</strong> liberado agora</span>
+    </div>
+    <div class="wp-win-perk">
+      <span class="wp-win-icon">💸</span>
+      <span><strong>Até 95%</strong> de desconto</span>
+    </div>
+    <div class="wp-win-perk">
+      <span class="wp-win-icon">🚚</span>
+      <span><strong>Frete grátis</strong> (quando disponível)</span>
+    </div>
+  </div>
+
+  <div class="wp-win-footer">
+    <span class="wp-win-luck">🍀 Boa sorte!</span>
+    <span class="wp-win-note">Aproveite agora — esta chance é limitada.</span>
+  </div>
+</div>
+
+<style>
+  .wp-win-card{
+    position: relative;
+    padding: 22px 18px 18px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #fff7fb 55%, #ffffff 100%);
+    border: 1px solid rgba(255, 0, 133, .14);
+    box-shadow:
+      0 18px 40px rgba(0,0,0,.10),
+      0 2px 0 rgba(255,255,255,.9) inset;
+    overflow: hidden;
+    max-width: 760px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  }
+
+  /* glow rosa */
+  .wp-win-card:before{
+    content:"";
+    position:absolute;
+    inset:-40px -60px auto -60px;
+    height: 140px;
+    background: radial-gradient(circle at 30% 40%,
+      rgba(255,0,133,.18) 0%,
+      rgba(255,0,133,.08) 35%,
+      rgba(255,0,133,0) 70%
+    );
+    pointer-events:none;
+  }
+
+  /* linha decorativa inferior */
+  .wp-win-card:after{
+    content:"";
+    position:absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 12px;
+    height: 3px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, rgba(255,0,133,0), rgba(255,0,133,.55), rgba(255,0,133,0));
+    opacity: .7;
+    pointer-events:none;
+  }
+
+  .wp-win-badge{
+    display:inline-flex;
+    align-items:center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #ff4aa8 0%, #ff0085 100%);
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: .6px;
+    font-size: 12px;
+    box-shadow: 0 10px 18px rgba(255,0,133,.22);
+    text-transform: uppercase;
+  }
+
+  .wp-win-title{
+    margin: 14px 0 10px;
+    font-size: 22px;
+    line-height: 1.12;
+    color: #111;
+    font-weight: 900;
+  }
+
+  .wp-win-title span{
+    color: #ff0085;
+    text-shadow: 0 1px 0 rgba(255,255,255,.6);
+  }
+
+  .wp-win-text{
+    margin: 0 0 14px;
+    font-size: 15.5px;
+    line-height: 1.45;
+    color: #2b2b2b;
+  }
+
+  .wp-win-text strong{
+    color: #111;
+    font-weight: 900;
+  }
+
+  .wp-win-perks{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 14px;
+    background: linear-gradient(180deg, rgba(255,0,133,.06) 0%, rgba(255,0,133,.03) 100%);
+    border: 1px solid rgba(255,0,133,.10);
+  }
+
+  .wp-win-perk{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    padding: 10px 10px;
+    border-radius: 12px;
+    background: rgba(255,255,255,.72);
+    box-shadow: 0 10px 22px rgba(0,0,0,.06);
+    color: #191919;
+    font-size: 14.5px;
+  }
+
+  .wp-win-icon{
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: radial-gradient(circle at 30% 30%,
+      #fff6b6 0%,
+      #ffd34f 45%,
+      #ffb800 100%
+    );
+    border: 2px solid rgba(255,255,255,.85);
+    box-shadow: 0 10px 18px rgba(0,0,0,.10);
+    font-size: 16px;
+  }
+
+  .wp-win-footer{
+    margin-top: 14px;
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .wp-win-luck{
+    font-weight: 900;
+    color: #111;
+    font-size: 14px;
+  }
+
+  .wp-win-note{
+    font-size: 12.5px;
+    color: #666;
+    text-align: right;
+    max-width: 320px;
+  }
+
+  @media (max-width: 420px){
+    .wp-win-title{ font-size: 20px; }
+    .wp-win-text{ font-size: 15px; }
+    .wp-win-note{ text-align: left; max-width: none; }
+    .wp-win-footer{ flex-direction: column; }
+  }
+</style>
 
             </p>
         </div>
