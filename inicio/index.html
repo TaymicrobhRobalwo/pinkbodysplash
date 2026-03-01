@@ -19,21 +19,6 @@
     <script src="../../cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids
         async defer></script>
 
-    <script type="text/javascript">
-        //digite a url de redirect
-        var url_link_redirect_pc = "https://www.wepink.com.br/";
-
-        //function js
-        function isMobile() {
-            const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-            return regex.test(navigator.userAgent);
-        }
-
-        //validation js
-        if (isMobile()) { console.log("Mobile device detected"); } else {
-            window.location = url_link_redirect_pc;
-        }
-    </script>
 
 
     <meta charset="UTF-8">
@@ -90,11 +75,14 @@
     </nav>
 
 
+
     <div class="pergunta">
 
         <!--------------------- Barra de progresso --------------------->
 
         <div style="padding-bottom: 20px;"></div>
+
+
 
         <div id="respondaeganhe" class="respondaeganhe">
             <p style="font-family: 'GellixSemiBold';">Responda e ganhe!</p>
@@ -112,7 +100,7 @@
 
         <!--------------------- Pergunta 1 --------------------->
         <div id="p1">
-            <img src="images/quiz.jpg" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <img src="images/quiz2.png" style="width: 100%; display: flex; margin: 0 auto; border-radius: 15px;">
             <p class="pergunta_title">
                 Você já participou de alguma <b>Queima de Estoque da WePink</b> em anos anteriores?
             </p>
@@ -124,9 +112,11 @@
             </ul>
         </div>
 
+        
+
         <!--------------------- Pergunta 2 --------------------->
         <div id="p2" style="display: none">
-            <img src="images/quiz.jpg" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <img src="images/quiz2.png" style="width: 100%; display: flex; margin: 0 auto; border-radius: 15px;">
             <p class="pergunta_title">
                 O que mais te motiva a participar da <b>Queima de Estoque Janeiro 2026</b> da WePink?
             </p>
@@ -140,7 +130,7 @@
 
         <!--------------------- Pergunta 3 --------------------->
         <div id="p3" style="display: none">
-            <img src="images/quiz.jpg" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <img src="images/quiz2.png" style="width: 100%; display: flex; margin: 0 auto; border-radius: 15px;">
             <p class="pergunta_title">
                 Em outras promoções da WePink, você já conseguiu comprar produtos com
                 <b>descontos acima de 50%</b>?
@@ -155,7 +145,7 @@
 
         <!--------------------- Pergunta 4 --------------------->
         <div id="p4" style="display: none">
-            <img src="images/quiz.jpg" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <img src="images/quiz2.png" style="width: 100%; display: flex; margin: 0 auto; border-radius: 15px;">
             <p class="pergunta_title">
                 Durante uma queima de estoque, qual tipo de oferta você costuma buscar primeiro?
             </p>
@@ -169,7 +159,7 @@
 
         <!--------------------- Pergunta 5 --------------------->
         <div id="p5" style="display: none">
-            <img src="images/quiz.jpg" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+            <img src="images/quiz2.png" style="width: 100%; display: flex; margin: 0 auto; border-radius: 15px;">
             <p class="pergunta_title">
                 Você está prestes a participar primeira roleta premiada de Body Splash ja feita pela WePink, oque você
                 achou dessa nova maneira de ganhar descontos?
@@ -220,7 +210,9 @@
 
         <div style="padding-bottom: 10px;"></div>
 
-        <button class="next-button" id="next-button" onclick="nextQuestion()">Próximo</button>
+        <button class="next-button" id="next-button" onclick="nextQuestion()">
+            Continuar
+        </button>
 
         <div style="padding-bottom: 20px;"></div>
 
